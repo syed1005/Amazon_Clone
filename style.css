@@ -1,0 +1,571 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Creating Navbar*/
+
+.navbar{
+  height: 100px;
+  width: 100%;
+}
+
+.navbar-top{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color: #131921;
+  color: white;
+}
+
+.nav-left{
+  height: 100%;
+  width: 204;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 10px 0;
+  justify-content: space-between;
+}
+
+/* Putting Amazon Logo */
+
+.amazon-logo{
+  height: 50px;
+  width: 7rem;
+}
+
+.logo{
+  background-image: url(/Image-logo/amazon_logo.png);
+  background-size: cover;
+  height: 50px;
+  width: 100%;
+}
+
+.border{
+  border: 1.5px solid transparent;
+}
+
+.border:hover{
+  border-color: rgba(255, 255, 255);
+}
+
+/** Creating Location Popover **/
+
+.location-popover{
+  height: 50px;
+  width: 6.5rem;
+  align-items: center;
+}
+
+.location-logo{
+  display: flex;
+  margin-left: 15px;
+}
+
+.location-first{
+  font-size: 0.8rem;
+  color: #CCCCCC;
+  margin: 10px 0 0 30px;
+}
+
+.location-second{
+  font-size: 1rem;
+  font-weight: 700;
+  align-items: center;
+  margin-left: 3px;
+}
+
+/** Creating Search Area In Navbar **/
+
+.nav-search-area{
+  height: 60px;
+  width: 58vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-search{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-search:hover{
+  border: 2px solid orange;
+}
+
+.nav-search-left{
+  height: 40px;
+  width: 52px;
+  font-size: 10px;
+}
+
+#category-select{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
+
+.nav-search-fill{
+  height: 40px;
+  width: 685px;
+}
+
+input{
+  height: 40px;
+  width: 100%;
+  line-height: 15px;
+  margin: 0;
+  border: 0;
+  font-size: 15px;
+}
+
+.nav-search-right{
+  display: flex;
+  height: 40px;
+  width: 48px;
+  background-color: #F3A847;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#search-logo{
+  color: #0f1111;
+  font-size: 1.2rem;
+}
+
+/* Creating Right Side in Navbar After Search Area */
+
+.nav-right{
+  height: 60px;
+  width: 27vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+
+.language{
+  height: 50px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 1px;
+  padding: 0 5px 2px;
+}
+
+#language-select{
+  height: 100%;
+  width: 100%;
+  background-color: #131921;
+  border: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.signin{
+  height: 50px;
+  width: 120px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-orders{
+  height: 50px;
+  width: 90px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-logo{
+  height: 50px;
+  width: 60px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i{
+    color:#fff;
+    font-size: 25px;
+  }
+}
+
+/* Creating Nav-Panel */
+
+.navbar-bottom{
+  height: calc(100% - 60px);
+  width: 100%;
+  background-color: #232F3E;
+  justify-content: center;
+  align-items: center;
+
+  .nav-panel{
+    height: 39px;
+    display: flex;
+  }
+
+  .menu-icon{
+    height: 39;
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+
+    i{
+      font-size: 20px;
+    }
+
+    .all{
+      font-size: 14px;
+      font-weight: 600;
+      padding-left: 5px;
+      padding-top: 2px;
+    }
+  }
+
+  .option-select{
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .opt-border:hover{
+    border: 1.5px solid #ffffff;
+  }
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #today-deal{
+    height: 39px;
+    width: 103px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #customer-service{
+    height: 39px;
+    width: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #registry{
+    height: 39px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gifts-cards{
+    height: 39px;
+    width: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sell{
+    height: 39px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+/* Creating Style for Body */
+
+.main{
+  background-color: #E3E6E6;
+  flex-wrap: wrap;
+
+  .hero-image{
+    background-image: url(/Image-logo/hero_image.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+  
+  .content-top{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  
+    .cards-top-1{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+  
+      .box-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px;
+      }
+    }
+    .cards-top-2{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+  
+      .box2-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px;
+      }
+    }
+    .cards-top-3{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+      
+      .box3-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px;
+      }
+    }
+    .cards-top-4{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+      
+      .box4-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px; 
+      }
+    }
+  }
+
+  .card-content{
+    height: 300px;
+    width: 80%;
+
+    h2{
+      font-size: 18px;
+      max-height: 54px;
+      font-weight: 600;
+      color: black;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+
+    p{
+      font-size: 15px;
+      font-weight: 200;
+      color: black;
+      margin-top: 1px;
+      margin-left: 10px;
+    }
+  }
+
+  .content-bottom{
+    display: flex;
+    justify-content: space-evenly;  
+    margin-top: 1rem;
+
+    .cards-bottom-1{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+  
+      .box-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px;
+      }
+    }
+    .cards-bottom-2{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+  
+      .box2-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px;
+      }
+    }
+    .cards-bottom-3{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+      
+      .box3-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px;
+      }
+    }
+    .cards-bottom-4{
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border: 2px black;
+      
+      .box4-img{
+        height: 300px;
+        width: 280px;
+        background-size: cover;
+        margin: 10px 10px 10px 10px; 
+      }
+    }
+  }
+}
+
+/* Creating Style for Footer */
+footer{
+  color: #fff;
+
+  .foot-panel1{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485769;
+    font-size: 0.7rem;
+  }
+
+  .foot-panel2{
+    height: 399px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232F3E;
+    padding-top: 20px;
+    font-size: 0.9rem;
+
+    ul a{
+      display: block;
+      margin-top: 10px;
+    }
+
+    ul{
+      padding-left: 0;
+      color: #DDDDDD;
+      
+    }
+  }
+
+  .foot-panel3{
+    height: 100px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid #DDDDDD;
+  }
+
+  .foot-amzn-logo{
+    height: 50px;
+    width: 15vw;
+    padding-right: 90px;
+  }
+
+  .lang-select{
+    height: 34px;
+    width: 141px;
+    border: 1.5px  solid #ccc;
+    padding-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #language-select{
+      background-color: #232F3E;
+    }
+  }
+
+  .country-set{
+    height: 34px;
+    width: 141px;
+    border: 1.5px  solid #ccc;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      height: 30px;
+      width:  30px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+    }
+
+    #cntry-set{
+      height: 100%;
+      width: 100%;
+      background-color: #232F3E;
+      color: #fff;
+      -webkit-appearance: none;
+    }
+  }
+
+  .foot-panel4{
+    height: 75px;
+    background-color: #131A22;
+    font-size: 0.7rem;
+    text-align: center;
+
+    .pages{
+      padding-top: 10px;
+    }
+
+    .copyright{
+      padding-top: 5px;
+    }
+  }
+}
